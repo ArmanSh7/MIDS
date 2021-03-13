@@ -1,0 +1,71 @@
+# Compile of ALU.v was successful.
+# Compile of CPU.v was successful.
+# Compile of Ctrl.v was successful.
+# Compile of DataMem.v was successful.
+# Compile of InstFetch.v was successful.
+# Compile of InstROM.v was successful.
+# Compile of RegFile.v was successful.
+# Compile of test_bench_3_part1.v was successful.
+# Compile of test_bench_3_part2.v was successful.
+# Compile of test_bench_3_part3.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.test_bench_3_part1
+# vsim -gui work.test_bench_3_part1 
+# Start time: 13:31:58 on Dec 15,2020
+# Loading work.test_bench_3_part1
+# Loading work.CPU
+# Loading work.InstFetch
+# Loading work.Ctrl
+# Loading work.InstROM
+# Loading work.RegFile
+# Loading work.ALU
+# Loading work.DataMem
+run -all
+# operand(hex) = 9000, sqrt(hex) = c0
+# success -- match3
+# ** Note: $stop    : C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program3/test_bench_3_part1.v(74)
+#    Time: 5475 ps  Iteration: 0  Instance: /test_bench_3_part1
+# Break in Module test_bench_3_part1 at C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program3/test_bench_3_part1.v line 74
+quit -sim
+# End time: 13:33:06 on Dec 15,2020, Elapsed time: 0:01:08
+# Errors: 0, Warnings: 5
+vsim work.test_bench_3_part2
+# vsim work.test_bench_3_part2 
+# Start time: 13:33:09 on Dec 15,2020
+# Loading work.test_bench_3_part2
+# Loading work.CPU
+# Loading work.InstFetch
+# Loading work.Ctrl
+# Loading work.InstROM
+# Loading work.RegFile
+# Loading work.ALU
+# Loading work.DataMem
+run -all
+# operand(hex) = fe01, sqrt(hex) = ff
+# success -- match3
+# ** Note: $stop    : C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program3/test_bench_3_part2.v(74)
+#    Time: 7635 ps  Iteration: 0  Instance: /test_bench_3_part2
+# Break in Module test_bench_3_part2 at C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program3/test_bench_3_part2.v line 74
+quit -sim
+vsim work.test_bench_3_part3
+# End time: 13:33:36 on Dec 15,2020, Elapsed time: 0:00:27
+# Errors: 0, Warnings: 1
+# vsim work.test_bench_3_part3 
+# Start time: 13:33:36 on Dec 15,2020
+# Loading work.test_bench_3_part3
+# Loading work.CPU
+# Loading work.InstFetch
+# Loading work.Ctrl
+# Loading work.InstROM
+# Loading work.RegFile
+# Loading work.ALU
+# Loading work.DataMem
+run -all
+# operand(hex) = 00be, sqrt(hex) = 0d
+# success -- match3
+# ** Note: $stop    : C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program3/test_bench_3_part3.v(74)
+#    Time: 4515 ps  Iteration: 0  Instance: /test_bench_3_part3
+# Break in Module test_bench_3_part3 at C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program3/test_bench_3_part3.v line 74
+quit
+# End time: 13:33:58 on Dec 15,2020, Elapsed time: 0:00:22
+# Errors: 0, Warnings: 1

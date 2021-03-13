@@ -1,0 +1,64 @@
+C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/test_bench_1_part2.v {1 {vlog -work work -stats=none C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/test_bench_1_part2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module test_bench_1_part2
+
+Top level modules:
+	test_bench_1_part2
+
+} {} {}} C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/CPU.v {1 {vlog -work work -stats=none C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/CPU.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module CPU
+
+Top level modules:
+	CPU
+
+} {} {}} C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/InstFetch.v {1 {vlog -work work -stats=none C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/InstFetch.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module InstFetch
+
+Top level modules:
+	InstFetch
+
+} {} {}} C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/InstROM.v {1 {vlog -work work -stats=none C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/InstROM.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module InstROM
+
+Top level modules:
+	InstROM
+
+} {} {}} C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/Ctrl.v {1 {vlog -work work -stats=none C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/Ctrl.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Ctrl
+
+Top level modules:
+	Ctrl
+
+} {} {}} C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/DataMem.v {1 {vlog -work work -stats=none C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/DataMem.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DataMem
+
+Top level modules:
+	DataMem
+
+} {} {}} C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/ALU.v {1 {vlog -work work -stats=none C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/ALU.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/RegFile.v {1 {vlog -work work -stats=none C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/RegFile.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module RegFile
+
+Top level modules:
+	RegFile
+
+} {} {}} C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/test_bench_1_part1.v {1 {vlog -work work -stats=none C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/test_bench_1_part1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module test_bench_1_part1
+
+Top level modules:
+	test_bench_1_part1
+
+} {} {}}

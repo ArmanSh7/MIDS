@@ -1,0 +1,225 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vALU
+Z0 !s110 1608069351
+!i10b 1
+!s100 >>XN1eG1@hF016gL7Of9n1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IF`4hXDJl1L:ScX=3=WLkS2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1
+Z4 w1606604456
+8C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/ALU.v
+FC:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/ALU.v
+!i122 9
+L0 12 32
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1608069351.000000
+!s107 C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/ALU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/ALU.v|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+n@a@l@u
+vCPU
+R0
+!i10b 1
+!s100 jBF1j5d43`8YdE3_:EdFX3
+R1
+IR^I=JB:SeMJm9_H=U]`ge0
+R2
+R3
+R4
+8C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/CPU.v
+FC:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/CPU.v
+!i122 10
+L0 15 117
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/CPU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/CPU.v|
+!i113 1
+R7
+R8
+n@c@p@u
+vCtrl
+R0
+!i10b 1
+!s100 z>]H;_E^SlL15Ea:3O7a?3
+R1
+I:YEG>R`0WB479086imYQZ1
+R2
+R3
+R4
+8C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/Ctrl.v
+FC:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/Ctrl.v
+!i122 11
+L0 13 173
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/Ctrl.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/Ctrl.v|
+!i113 1
+R7
+R8
+n@ctrl
+vDataMem
+Z9 !s110 1608069352
+!i10b 1
+!s100 S:_980W_mRBcmP<4Qao3O1
+R1
+Ik0c>8lmTU0hNmE[LmbC4=3
+R2
+R3
+R4
+8C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/DataMem.v
+FC:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/DataMem.v
+!i122 12
+L0 13 42
+R5
+r1
+!s85 0
+31
+Z10 !s108 1608069352.000000
+!s107 C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/DataMem.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/DataMem.v|
+!i113 1
+R7
+R8
+n@data@mem
+vInstFetch
+R9
+!i10b 1
+!s100 FX4CBkCjSLLXe[V;FOflR0
+R1
+IN_>I[9oT;i9OaB?:k[j@o2
+R2
+R3
+R4
+8C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/InstFetch.v
+FC:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/InstFetch.v
+!i122 13
+L0 12 29
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/InstFetch.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/InstFetch.v|
+!i113 1
+R7
+R8
+n@inst@fetch
+vInstROM
+R9
+!i10b 1
+!s100 VoLnhSaF`zeHg0EU4bYma0
+R1
+IQL?EGZX25o:cG[j;i`7`E1
+R2
+R3
+w1608067184
+8C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/InstROM.v
+FC:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/InstROM.v
+!i122 14
+L0 17 36
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/InstROM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/InstROM.v|
+!i113 1
+R7
+R8
+n@inst@r@o@m
+vRegFile
+R9
+!i10b 1
+!s100 Tmb=D[EAlb1L;DRW<BRDk0
+R1
+IGRiVGS7fBb<0:Hm8BU`@h3
+R2
+R3
+R4
+8C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/RegFile.v
+FC:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/RegFile.v
+!i122 15
+L0 14 40
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/RegFile.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/RegFile.v|
+!i113 1
+R7
+R8
+n@reg@file
+vtest_bench_1_part1
+R9
+!i10b 1
+!s100 ZogRNj7[0[_gjolF8JJjb2
+R1
+I=l6IJG0Fi4kS>P<9Um;je2
+R2
+R3
+w1608067490
+8C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/test_bench_1_part1.v
+FC:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/test_bench_1_part1.v
+!i122 16
+Z11 L0 8 86
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/test_bench_1_part1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/test_bench_1_part1.v|
+!i113 1
+R7
+R8
+vtest_bench_1_part2
+R9
+!i10b 1
+!s100 hjeD3AjQlmj;<IO[?GWFG2
+R1
+IikaRa>`cPf@e3C:kTlHVm0
+R2
+R3
+w1608067483
+8C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/test_bench_1_part2.v
+FC:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/test_bench_1_part2.v
+!i122 17
+R11
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/test_bench_1_part2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ajsch/Desktop/CPUFinalSubmission/demonstration/Program1/test_bench_1_part2.v|
+!i113 1
+R7
+R8
