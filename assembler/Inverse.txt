@@ -1,0 +1,217 @@
+loi #0
+add r0
+mov r5
+loi #1
+add r0
+mov r6
+lwi #8
+mov r3
+lwi #9
+mov r4
+lor r4
+seq r6
+bp CHECKONE
+loi #1
+add r0
+bp BODY
+CHECKONE:
+lor r5
+seq r3
+bp RETURN_ONE
+loi #1
+add r0
+bp BODY
+RETURN_ONE:
+loi #11
+sw r5
+loi #7
+sll r6
+mov r6
+loi #10
+sw r6
+halt
+BODY:
+lor r0
+add r0
+mov r7
+mov r8
+mov r9
+loi #1
+add r0
+mov r12
+LOOP:
+loi #7
+slr r6
+mov r10
+loi #1
+seq r10
+bp EDITSHIFT
+loi #1
+sll r6
+mov r6
+loi #1
+sll r5
+mov r5
+lor r12
+add r0
+bp NUM_N_COMPARE
+EDITSHIFT:
+loi #1
+sll r6
+mov r6
+loi #1
+sll r5
+mov r5
+loi #1
+add r5
+mov r5
+lor r12
+add r0
+bp NUM_N_COMPARE
+LOOPCHAIN_6:
+lor r12
+add r0
+bn LOOP
+NUM_N_COMPARE:
+lor r3
+slt r5
+bp PASSIF2CHAIN
+lor r3
+seq r5
+bp COMPARE_LSB_1
+lor r12
+add r0
+bp ENTER_IF_1
+LOOPCHAIN_5:
+lor r12
+add r0
+bn LOOPCHAIN_6
+COMPARE_LSB_1:
+lor r4
+slt r6
+bp PASSIF2CHAIN
+ENTER_IF_1:
+lor r8
+seq r14
+bp EDIT_ADD_RES
+loi #1
+add r8
+mov r8
+lor r12
+add r0
+bp DEDUCT_NUM
+LOOPCHAIN_4:
+lor r12
+add r0
+bn LOOPCHAIN_5
+PASSIF2CHAIN:
+lor r12
+add r0
+bp PASS_IF_CHAIN
+EDIT_ADD_RES:
+loi #0
+add r0
+mov r8
+loi #1
+add r7
+mov r7
+DEDUCT_NUM:
+lor r12
+add r0
+bp IGPASS_IF_CHAIN
+LOOPCHAIN_3:
+lor r12
+add r0
+bn LOOPCHAIN_4
+PASS_IF_CHAIN:
+lor r12
+add r0
+bp PASS_IFMIDDUDUCT
+IGPASS_IF_CHAIN:
+lor r4
+slt r6
+bp CORRECT_DEDUCT
+lor r4
+sub r6
+mov r6
+lor r3
+sub r5
+mov r5
+PASS_IFMIDDUDUCT:
+lor r12
+add r0
+bp PASS_IF1
+LOOPCHAIN_2:
+lor r12
+add r0
+bn LOOPCHAIN_3
+CORRECT_DEDUCT:
+lor r6
+sub r4
+mov r10
+lor r10
+sub r14
+mov r6
+loi #1
+add r6
+mov r6
+loi #1
+sub r5
+mov r5
+lor r3
+sub r5
+mov r5
+PASS_IF1:
+loi #14
+seq r9
+bp INCREMENT_I_CHAIN
+lor r12
+add r0
+bp AFTERLOOPCHAIN_1
+LOOPCHAIN_1:
+lor r12
+add r0
+bn LOOPCHAIN_2
+AFTERLOOPCHAIN_1:
+loi #7
+slr r8
+mov r10
+loi #1
+seq r10
+bp EDITSHIFT_2
+loi #1
+sll r8
+mov r8
+loi #1
+sll r7
+mov r7
+INCREMENT_I_CHAIN:
+lor r12
+add r0
+bp INCREMENT_I
+LOOPCHAIN_0:
+lor r12
+add r0
+bn LOOPCHAIN_1
+EDITSHIFT_2:
+loi #1
+sll r8
+mov r8
+loi #1
+sll r7
+mov r7
+loi #1
+add r7
+mov r7
+INCREMENT_I:
+loi #1
+add r9
+mov r9
+loi #15
+slt r9
+bn LOOPCHAIN_0
+loi #10
+sw r7
+loi #11
+sw r8
+halt

@@ -1,0 +1,170 @@
+lwi #0
+mov r3
+lwi #1
+mov r4
+lwi #2
+mov r5
+WHILE:
+lor r3
+slt r0
+bp NMINUSM
+lor r5
+slt r4
+bp WHILE_DONE_CHAIN
+NMINUSM:
+lor r5
+slt r4
+bp SUB_CARRY
+lor r5
+sub r4
+mov r4
+loi #1
+add r0
+bp INCR_Q
+SUB_CARRY:
+lor r4
+sub r5
+mov r10
+lor r10
+sub r14
+mov r10
+loi #1
+add r10
+mov r4
+loi #0
+add r0
+WHILE_DONE_CHAIN:
+bp WHILE_DONE
+WHILE_CHAIN:
+bn WHILE
+loi #1
+sub r3
+mov r3
+INCR_Q:
+loi #1
+add r7
+mov r10
+lor r7
+slt r10
+bp ADD_Q_OVF
+lor r10
+add r0
+mov r7
+loi #1
+add r0
+bp WHILE_END
+ADD_Q_OVF:
+loi #1
+add r7
+mov r7
+add r6
+mov r6
+WHILE_END:
+loi #1
+add r0
+bn WHILE_CHAIN
+WHILE_DONE:
+loi #4
+sw r6
+loi #5
+sw r7
+lor r0
+add r0
+mov r6
+mov r7
+mov r11
+FOR_LOOP:
+loi #1
+sll r3
+mov r3
+loi #7
+slr r4
+mov r6
+lor r6
+add r3
+mov r3
+loi #1
+sll r4
+mov r4
+loi #1
+sll r8
+mov r8
+loi #0
+add r0
+FOR_LOOP_CHAIN_2:
+bn FOR_LOOP
+lor r3
+slt r0
+bp NOT_EQUAL
+lor r4
+seq r5
+bp EQUAL_CHAIN
+NOT_EQUAL:
+lor r3
+slt r0
+bp N_GREATER_M
+lor r4
+slt r5
+bp N_GREATER_M
+loi #1
+add r0
+bp FOR_END
+N_GREATER_M:
+loi #1
+add r8
+mov r8
+lor r5
+slt r4
+bp FOR_SUB_CARRY
+lor r5
+sub r4
+mov r4
+loi #0
+add r0
+EQUAL_CHAIN:
+bp EQUAL
+FOR_LOOP_CHAIN_1:
+bn FOR_LOOP_CHAIN_2
+loi #1
+add r0
+bp FOR_END
+FOR_SUB_CARRY:
+lor r4
+sub r5
+mov r12
+lor r12
+sub r14
+mov r12
+loi #1
+add r12
+mov r4
+loi #1
+sub r3
+mov r3
+FOR_END:
+loi #1
+add r11
+mov r11
+loi #8
+slt r11
+bn FOR_LOOP_CHAIN_1
+loi #1
+add r0
+bp RETURN
+EQUAL:
+loi #1
+add r8
+mov r8
+loi #6
+add r0
+mov r10
+lor r11
+sub r10
+mov r10
+lor r10
+sll r8
+mov r8
+RETURN:
+loi #6
+sw r8
+halt

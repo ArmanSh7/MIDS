@@ -1,0 +1,242 @@
+lwi #16
+mov r3
+lwi #17
+mov r4
+lor r0
+add r0
+mov r5
+mov r6
+loi #1
+add r0
+mov r7
+loi #6
+sll r7
+mov r7
+lor r0
+add r0
+mov r8
+SIZER:
+lor r7
+seq r3
+bp LSB
+lor r3
+slt r7
+LOOP2CHAIN2:
+bp LOOP2CHAIN3
+loi #6
+sll r7
+mov r9
+loi #2
+slr r7
+mov r7
+slr r8
+lor r9
+add r2
+mov r8
+loi #1
+add r0
+SIZERCHAIN1:
+bn SIZER
+LSB:
+lor r8
+seq r4
+LOOP2CHAIN3:
+bp LOOP2
+lor r4
+slt r8
+bp LOOP2
+loi #6
+sll r7
+mov r9
+loi #2
+slr r7
+mov r7
+slr r8
+lor r9
+add r2
+mov r8
+loi #1
+add r0
+bn SIZERCHAIN1
+LOOP2:
+lor r0
+seq r7
+mov r9
+seq r8
+mov r1
+add r9
+mov r9
+loi #2
+seq r9
+bp RETURNCHAIN1
+lor r6
+add r8
+mov r10
+slt r10
+bp ADDOVERFLOW
+lor r8
+slt r10
+bp ADDOVERFLOW
+lor r5
+add r7
+mov r9
+loi #1
+add r0
+bp IFCHECK
+LOOP2CHAIN9:
+bn LOOP2
+ADDOVERFLOW:
+loi #1
+add r5
+mov r1
+add r7
+mov r9
+loi #1
+add r0
+bp IFCHECK
+LOOP2CHAIN4:
+bn LOOP2CHAIN9
+RETURNCHAIN1:
+bp RETURNCHAIN2
+IFCHECK:
+lor r3
+seq r9
+bp LSBCHECK
+lor r3
+slt r9
+bp ELSECHAIN1
+INNERSUMCOND:
+loi #7
+sll r5
+mov r11
+loi #1
+slr r5
+mov r5
+slr r6
+lor r11
+add r2
+mov r6
+loi #6
+sll r7
+mov r11
+loi #2
+slr r7
+mov r7
+slr r8
+lor r11
+add r2
+mov r8
+loi #1
+add r0
+LOOP2CHAIN8:
+bn LOOP2CHAIN4
+RETURNCHAIN2:
+bp RETURNCHAIN3
+ELSECHAIN1:
+bp ELSE
+INNERSUMCONDCHAIN1:
+bn INNERSUMCOND
+LSBCHECK:
+lor r10
+seq r4
+bp ELSE
+lor r4
+slt r10
+bp ELSE
+loi #1
+add r0
+bn INNERSUMCONDCHAIN1
+ELSE:
+lor r10
+slt r4
+bp SUBOFLOW
+sub r4
+mov r4
+lor r9
+sub r3
+mov r3
+loi #1
+add r0
+bp ELSEEND
+loi #0
+add r0
+RETURNCHAIN3:
+bp RETURNCHAIN4
+LOOP2CHAIN7:
+bn LOOP2CHAIN8
+SUBOFLOW:
+lor r4
+sub r10
+mov r1
+sub r14
+loi #1
+add r2
+mov r4
+sub r3
+mov r3
+lor r9
+sub r3
+mov r3
+loi #0
+add r0
+RETURNCHAIN4:
+bp RETURNCHAIN5
+LOOP2CHAIN6:
+bn LOOP2CHAIN7
+ELSEEND:
+loi #7
+sll r5
+mov r11
+loi #1
+slr r6
+mov r1
+add r11
+mov r12
+loi #1
+slr r5
+mov r11
+lor r12
+add r8
+mov r6
+lor r12
+slt r6
+bp OVERFLOWADD2
+lor r8
+slt r6
+bp OVERFLOWADD2
+lor r11
+add r7
+mov r5
+loi #1
+add r0
+bp ELSEEND2
+loi #0
+add r0
+RETURNCHAIN5:
+bp RETURN
+LOOP2CHAIN5:
+bn LOOP2CHAIN6
+OVERFLOWADD2:
+loi #1
+add r11
+mov r1
+add r7
+mov r5
+ELSEEND2:
+loi #6
+sll r7
+mov r11
+loi #2
+slr r7
+mov r7
+slr r8
+lor r11
+add r2
+mov r8
+loi #1
+add r0
+bn LOOP2CHAIN5
+RETURN:
+lor r6
+swi #18
+halt
